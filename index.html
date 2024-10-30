@@ -1,79 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- reset css -->
-    <link rel="stylesheet" href="./src/styles/reset.css">
-
-    <!-- framework -->
-    <link rel="stylesheet" href="./src/styles/buttons.css">
-    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
-
-    <!-- main style -->
-    <link rel="stylesheet" href="./src/styles/main.css">
-    <title>Yu-Gi-Oh Jo-ken-po Edition</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portifolio</title>
 </head>
-
 <body>
-    <audio id="bgm" loop>
-        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3" />
-    </audio>
+<div >
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="assets/images/icons8-casa-24.png" width="70px" ></a>
+        <div class="collapse navbar-collapse justify-content-end p-3">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">01. Sobré</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">02. Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">03. Trabalho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">04. Contato</a>
+                </li>
+            </ul>
+            <a href="#resume" class="resume-btn ml-3">Resumo</a>
+        </div>
+    </nav>
+
+<div class="imgB">
+<div class="c1  align-content-center row container">
+    <div class="info col-10 container-lg">
+        <h3 style="color: aquamarine;">Olá, meu nome é</h3>
+        <h1>Mario Gonçalves de Freitas Junior</h1>
+        <h2>Eu crio sites para a internet</h2>
+        <p>
+            Sou um estudantes de programação estou me especializando-se na criação web <br>
+            Busco sempre o meu melhor para fazer sites de qualidades para internet <br>
+            Minha ideia central é criar um conteúdo divertido e intuitivo
+            
+        </p>
+    </div>   
+    <div class="col-2 borderO">
+        <img src="https://th.bing.com/th/id/OIP._gX-zqApH5gbb4ZB2HVEbQHaES?rs=1&pid=ImgDetMain" alt="" class=" border-5 border">
+    </div>
+
     
-    <div class="bg-video">
-        <video class="video" autoplay loop muted>
-            <source src="./src/assets/video/yugi.mp4" type="video/mp4" />
-        </video>
-    </div>
+</div>
 
-    <div class="container">
-        <div class="container__left framed-golden-2">
-            <div class="score_box frame">
-                <span id="score_points">Win : 0 | Lose : 0</span>
-            </div>
-            <div class="menu_avatar">
-                <img id="card-image">
-            </div>
-            <div class="card_details frame">
-                <p id="card-name">Selecione</p>
-                <p id="card-type">uma carta</p>
-            </div>
-        </div>
-        <div class="container__right">
-            <div class="card-box__container">
-                <div class="card-box framed" id="computer-cards"></div>        
+ 
+</div>
 
-                <div class="card-versus__container debug">
-                    <div class="versus-top">
-                        <div class="card-infield">
-                            <img id="player-field-card" height="180px" width="125px">
-                        </div>
-                        <img height="100px" src="./src/assets/icons/millenium2.png">
-                        <div class="card-infield">
-                            <img id="computer-field-card" height="180px" width="125px">
-                        </div>
-                    </div>
 
-                    <div class="versus-bottom">
-                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU</button>
-                    </div>
-                </div>
+</div>
+    
 
-                <div class="card-box framed" id="player-cards"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            </div>
-        </div>
-    </div>
-
-    <script src="./src/scripts/engine.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+h1, h2, h3, h4, p {
+    color: white;
+}
+
+body {
+    background-color: rgb(5, 2, 41);
+}
+
+.c1 {
+    padding: 200px;
+    text-align: justify;
+}
+
+.navbar {
+    background-color: #0d1117;
+}
+.navbar-nav .nav-link {
+    color: #8b949e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #58a6ff; 
+}
+.navbar-brand {
+    font-size: 1.2rem;
+    color: #58a6ff;
+}
+.resume-btn {
+    color: #58a6ff;
+    border: 1px solid #58a6ff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+.resume-btn:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+.imgB {
+    background-color: #2443f1;
+}
+
+.borderO {
+    padding-left: 20px;
+img {
+    border-radius: 0%;
+
+}
+}
