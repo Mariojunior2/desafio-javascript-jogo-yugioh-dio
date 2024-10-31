@@ -11970,16 +11970,17 @@ textarea.form-control-lg {
        column-gap: 248px;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, p {
+body {
+  background-color: rgb(5, 2, 41);
   color: white;
 }
 
-body {
-  background-color: rgb(5, 2, 41);
+h1, .h1, h2, .h2, h3, .h3, p {
+  color: white;
 }
 
 .c1 {
-  padding: 200px;
+  padding: 200px 0;
   text-align: justify;
 }
 
@@ -11989,7 +11990,7 @@ body {
 
 .navbar-nav .nav-link {
   color: #8b949e;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   padding: 0 0.5rem;
   transition: color 0.3s ease;
@@ -12020,11 +12021,25 @@ body {
 
 .imgB {
   background-color: #2443f1;
+  padding: 100px 0;
+  height: 880px;
 }
 
-.borderO {
-  padding-left: 20px;
-}
 .borderO img {
   border-radius: 0%;
+  width: 1000px;
+}
+
+@media (max-width: 500px) {
+  body, .imgB {
+    width: 100%;
+  }
+  .info {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+}
+.info {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
